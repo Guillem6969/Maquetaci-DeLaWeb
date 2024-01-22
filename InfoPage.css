@@ -1,0 +1,54 @@
+body,html{
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+#header{
+    width: 100%;
+}
+
+#ImagenEvento{
+    width: 100%;
+    text-align: center;
+}
+
+/*Imagen del evento*/
+#evento{
+    width: 85%;
+    margin-top: 15px;
+}
+
+/*_____________________________________________*/
+
+/*Párrafos de información del evento*/
+#parrafos{
+    width: 60%;
+    margin-left: 7.5%;
+}
+
+/*Subrallado y negrita*/
+.negrita{
+    font-weight: 700;
+    text-align: justify;
+    text-decoration-line: underline;
+}
+
+/*Botones grises*/
+.boton1{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: rgb(215, 204, 204);
+    font-size: larger;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(158, 154, 154);
+}
+
+#ACERCA-DEL-ORGANIZADOR{
+    width: 100%;
+    display: inline-block;
+}
+
+#a{
+    display: inline-block;
+    width: 50%;
+}
