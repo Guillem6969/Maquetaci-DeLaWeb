@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Estilo del header, usamos flex para distribuir los elementos*/
+header {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(157, 157, 157));
+    border-bottom: 3px solid lightseagreen;
+    column-gap: 20px;
+}
+
+
+header > img {
+    width: 5%;
+    height: 50%;
+}
+
+
+header > h1 {
+    width: 20%;
+}
+
+
+header > form {
+    width: 20%;
+}
+
+
+header > nav {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+
+article > img {
+    width: 33%;
+    height: 40vh; 
+    object-fit: cover;
+}
+
+.article-imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 20%);
+    justify-items: center;
+    background-color: mediumseagreen;
+}
+
+footer > p {
+    grid-column: 1/3;
+}
