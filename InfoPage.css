@@ -21,10 +21,26 @@ body,html{
 
 /*Párrafos de información del evento*/
 #parrafos{
-    width: 60%;
+    vertical-align: top;
+    width: 45%;
     margin-left: 7.5%;
+    display: inline-block;
 }
 
+h3{
+    width: 100%;
+}
+
+#compra{
+   margin-right: 10px;
+   width: 40%;
+   display: inline-block;
+   text-align: right;
+}
+
+footer{
+    display: inline-block;
+}
 /*Subrallado y negrita*/
 .negrita{
     font-weight: 700;
@@ -51,4 +67,8 @@ body,html{
 #a{
     display: inline-block;
     width: 50%;
+}
+
+#Bloque2{
+    display: inline-block;
 }
