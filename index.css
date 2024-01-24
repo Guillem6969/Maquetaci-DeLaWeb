@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    height: 1500px;
 }
 
 
@@ -81,4 +82,47 @@ footer {
 
 footer > p {
     grid-column: 1/3;
+}
+
+.article-texto > h2 {
+    margin: 20px 15px;
+}
+
+.article-texto > p {
+    margin: 20px 15px;
+
+}
+
+.article-texto > h3 {
+    margin: 20px 15px;
+    height: 100%;
+}
+
+
+.texto {
+    height: 50%;
+}
+
+.div-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    height: 50%;
+
+}
+
+.redondita {
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redondita a {
+    text-decoration: none;
+    color: black;
+    
 }
