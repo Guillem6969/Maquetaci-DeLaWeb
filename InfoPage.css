@@ -22,8 +22,8 @@ body,html{
 /*Párrafos de información del evento*/
 #parrafos{
     vertical-align: top;
-    width: 45%;
-    margin-left: 7.5%;
+    width: 59%;
+    margin-left: 6.5%;
     display: inline-block;
 }
 
@@ -33,11 +33,13 @@ h3{
 
 #compra{
    margin-right: 12px;
-   width: 40%;
+   width: 30%;
    display: inline-block;
    text-align: right;
    vertical-align: middle;
    height: 100%;
+   vertical-align: bottom;
+   margin-bottom: 50px;
 }
 
 footer{
@@ -84,4 +86,18 @@ footer{
     box-shadow: 2px 2px rgb(158, 154, 154);
     font-size: smaller;
     height: 40px;
+}
+#report{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+
+}
+h6{
+    margin: 0;
+    vertical-align: top;
+}
+
+#IS{
+    text-decoration-line: underline;
 }
