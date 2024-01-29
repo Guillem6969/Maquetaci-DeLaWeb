@@ -36,6 +36,8 @@ h3{
    width: 40%;
    display: inline-block;
    text-align: right;
+   vertical-align: middle;
+   height: 100%;
 }
 
 footer{
@@ -71,4 +73,15 @@ footer{
 
 #Bloque2{
     display: inline-block;
+}
+.boton2{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: #FFC52F;
+    font-size: larger;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(158, 154, 154);
+    font-size: smaller;
+    height: 40px;
 }
