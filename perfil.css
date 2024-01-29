@@ -78,6 +78,10 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     height: 50%;
 }
+h2 a {
+    text-decoration: none;
+    color: black;
+}
 .izquierdamedio h2{
     font-size: 100%;
 }
