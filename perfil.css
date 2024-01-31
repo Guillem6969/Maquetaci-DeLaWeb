@@ -66,8 +66,10 @@ h1{
     border-right: 2px black solid;
 }
 .izquierdamedio img{
-    width: 25%;
-    height: 35%;
+    min-width: 30%;
+    max-width: 30%;
+    min-height: 30%;
+    max-height: 30%;
 }
 
 .izquierdamedio h1{
