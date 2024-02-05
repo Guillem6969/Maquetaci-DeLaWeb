@@ -193,6 +193,7 @@ input{
     }
     .superior .cerrar {
         width: 20%;
+        margin-top: 2%;
     }
     .derechacerrar .cerrar {
         width: 30%;
