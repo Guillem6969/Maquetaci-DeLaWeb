@@ -3,7 +3,7 @@ body {
 }
 img{
     width: 5%;
-    height: 5%;
+    height: 50%;
 }
 .portada {
     width: 100%;
@@ -29,9 +29,62 @@ img{
     width: 5%;
     box-shadow: 0px 0px 0px;
 }
+/*Estilo del header, usamos flex para distribuir los elementos*/
 header {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(157, 157, 157));
+    position: sticky;
+    top: 0;
 }
+
+header > h1 {
+    width: 10%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black, 0 0px 25px #74ebd5, 0 0 5px #9face6;
+}
+
+
+header > form {
+    width: 6%;
+}
+
+form > input {
+    width: 100%;
+}
+
+
+header > nav {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(231, 231, 231);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 0.6cm;
+    box-shadow: 0 0 4px 1px;
+}
+
+form > input {
+    padding-top: 5%;
+    padding-bottom: 5%;  
+    padding-left: 50%;
+    padding-right: 50%;
+    border-radius: 0.6cm;
+    box-shadow: 0px 0px 4px;  
+}
+
 .politica {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -169,6 +222,38 @@ input{
     margin-right: 3%;
     margin-bottom: 3%;
 }
+@media screen and (max-width: 1250px) and (min-width:501px){
+    .div-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 30px;
+        justify-items: center;
+    }
+   
+    .div-container > h3 {
+        grid-column: 1/5;
+    }
+ 
+    form > input {
+        display: none;
+    }
+ 
+    .responsive-img {
+        display: none;
+    }
+ 
+    .article-imagenes img {
+        width: 100%;
+        object-fit: cover;
+    }
+ 
+    header > img {
+        width: 100px;
+        height: 100px;
+    }
+ 
+ 
+}
 @media screen and (max-width: 900px) {
     .inferior{
         display: flex;
@@ -197,6 +282,10 @@ input{
     .derechacerrar .cerrar {
         width: 30%;
     }
+    header > img {
+        width: 100px;
+        height: 100px;
+    }
   }
 
   @media screen and (max-width: 600px) {
@@ -223,5 +312,11 @@ input{
     }
     .derechacerrar .cerrar {
         margin-right: 4%;
+    }
+    header > img {
+        display: none;
+    }
+    form > input {
+        display: none;
     }
   }
