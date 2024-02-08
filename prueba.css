@@ -11,7 +11,7 @@
 .slider {
     display: flex;
     aspect-ratio: 16 / 9;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
     box-shadow: 5px 5px 10px gray;
     border-radius: 10px;
