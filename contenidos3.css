@@ -1,0 +1,274 @@
+body,html{
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+#header{
+    width: 100%;
+}
+
+#ImagenEvento{
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/*Imagen del evento*/
+#evento{
+    width: 85%;
+    margin-top: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/*_____________________________________________*/
+
+/*Párrafos de información del evento*/
+#parrafos{
+    vertical-align: top;
+    width: 59%;
+    margin-left: 6.5%;
+    display: inline-block;
+}
+
+h3{
+    width: 100%;
+}
+
+#compra{
+   margin-right: 12px;
+   width: 30%;
+   display: inline-block;
+   text-align: right;
+   height: 100%;
+   vertical-align: bottom;
+   margin-bottom: 50px;
+}
+
+footer{
+    display: inline-block;
+}
+/*Subrallado y negrita*/
+.negrita{
+    font-weight: 700;
+    text-align: justify;
+    text-decoration-line: underline;
+}
+
+/*Botones grises*/
+.boton1{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: rgb(215, 204, 204);
+    font-size: larger;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(158, 154, 154);
+}
+
+/*BOTONES GRISES HOVER*/
+.boton1:hover{
+    background-color: rgb(144, 134, 134);
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+#ACERCA-DEL-ORGANIZADOR{
+    width: 100%;
+    display: inline-block;
+}
+
+#a{
+    display: inline-block;
+    width: 50%;
+}
+
+#Bloque2{
+    display: inline-block;
+}
+.boton2{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: #FFC52F;
+    font-size: larger;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(158, 154, 154);
+    font-size: smaller;
+    height: 40px;
+}
+
+.boton2:hover{
+  background-color: #fcb500 ;
+  text-decoration-line: underline;
+}
+
+#report{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+
+}
+h6{
+    margin: 0;
+    vertical-align: top;
+}
+
+
+
+header {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(157, 157, 157));
+    column-gap: 20px;
+    position: sticky;
+    top: 0;
+}
+
+
+header > img {
+    width: 5%;
+    height: 50%;
+}
+
+
+header > h1 {
+    width: 20%;
+    color: mediumseagreen;
+    text-shadow: 2px 2px 2px black, 0 0 25px #74ebd5, 0 0 5px #9face6;
+}
+
+
+header > form {
+    width: 20%;
+}
+
+
+header > nav {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+input[type=text] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#PARTE-INFERIOR-EVENTO{
+    width: 85%;
+    margin: -5px;
+    display: inline-block;
+    background-color: rgb(217,217,217);;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#MERCADILLO-VINTAGE{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1250px) and (min-width:501px){
+    .div-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 30px;
+        justify-items: center;
+    }
+    
+    .div-container > h3 {
+        grid-column: 1/5;
+    }
+
+    input[type=text] {
+        display: none;
+    }
+
+    .responsive-img {
+        display: none;
+    }
+
+    .article-imagenes img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    header > img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+    h1 {
+        display:none;
+    }
+
+
+    .div-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        justify-items: center;
+    }
+
+    
+    .div-container > h3 {
+        grid-column: 1/3;
+    }
+
+
+    input[type=text] {
+        display: none;
+    }
+
+
+    .responsive-img {
+        display: none;
+    }
+
+
+    .article-imagenes img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    header > img {
+        width: 100px;
+        height: 100px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+    }
+    header > nav {
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+
+

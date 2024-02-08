@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Estilo del header, usamos flex para distribuir los elementos*/
+header {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(157, 157, 157));
+    column-gap: 20px;
+    position: sticky;
+    top: 0;
+}
+
+
+header > img {
+    width: 5%;
+    height: 50%;
+}
+
+
+header > h1 {
+    width: 20%;
+    color: mediumseagreen;
+    text-shadow: 2px 2px 2px black, 0 0 25px #74ebd5, 0 0 5px #9face6;
+}
+
+
+header > form {
+    width: 20%;
+}
+
+
+header > nav {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+
+input[type=text] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+main {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+article > img {
+    width: 33%;
+    /*height: 40vh;*/ 
+    object-fit: cover;
+}
+
+.article-imagenes {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6, 16.6%);
+    justify-items: center;
+    padding: 10px;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+footer > p {
+    grid-column: 1/3;
+    grid-row: 6/7;
+    color: white;
+    font-size: 0.8em;
+}
+
+footer a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.article-texto h2 {
+    padding-top: 50px;
+    text-align: center;
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    /*background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);*/
+}
+
+.article-texto  p {
+    padding: 50px;
+    line-height: 1.6;
+    text-align:center;
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}   
+
+.article-texto h3 {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.texto {
+    height: 50%;
+}
+
+.div-container {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    /*column-gap: 50px;*/
+    height: 50%;
+    padding: 50px;
+}
+
+.redondita {
+    background-color: lightblue;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(148,236,201);
+    background: linear-gradient(45deg, rgba(148,236,201,0.8687850140056023) 7%, rgba(115,209,202,0.6194852941176471) 47%, rgba(34,155,201,0.8211659663865546) 77%, rgba(0,212,255,0.8127626050420168) 95%);
+    border: 1px solid rgb(117, 179, 174);
+    box-shadow: 5px 6px 5px gray;
+}
+
+.redondita:hover {
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.redondita a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-width: 1250px) and (min-width:501px){
+    .div-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 30px;
+        justify-items: center;
+    }
+    
+    .div-container > h3 {
+        grid-column: 1/5;
+    }
+
+    input[type=text] {
+        display: none;
+    }
+
+    .responsive-img {
+        display: none;
+    }
+
+    .article-imagenes img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    header > img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 500px){
+    h1 {
+        display:none;
+    }
+
+
+    .div-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        justify-items: center;
+    }
+
+    
+    .div-container > h3 {
+        grid-column: 1/3;
+    }
+
+
+    input[type=text] {
+        display: none;
+    }
+
+
+    .responsive-img {
+        display: none;
+    }
+
+
+    .article-imagenes img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    header > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 140px;
+    }
+
+    header > nav {
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+
+}
