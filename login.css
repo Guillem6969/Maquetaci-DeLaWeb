@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    height: 100%;
+}
+
+
+/*Estilo del header, usamos flex para distribuir los elementos*/
+header {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(157, 157, 157));
+    column-gap: 20px;
+    position: sticky;
+    top: 0;
+}
+
+
+header > img {
+    width: 5%;
+    height: 50%;
+}
+
+
+header > h1 {
+    width: 20%;
+    color: mediumseagreen;
+    text-shadow: 2px 2px 2px black, 0 0 25px #74ebd5, 0 0 5px #9face6;
+}
+
+
+header > form {
+    width: 20%;
+}
+
+
+header > nav {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    row-gap: 20px;
+}
+
+
+.register-form {
+    margin-top: 60px;
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    width: 50%;
+    height: 65%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 8px 8px 10px gray;
+}
+
+
+
+form {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1em;
+}
+
+
+input[type=submit] {
+    width: 140px;
+    padding: 12px;
+    border-radius: 5px;
+    align-self: center;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+
+form > p {
+    align-self: center;
+}
+
+
+.margin-top {
+    margin-top: 30px;
+}
+
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6, 16.6%);
+    justify-items: center;
+    padding: 10px;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+footer > p {
+    grid-column: 1/3;
+    grid-row: 6/7;
+    color: white;
+    font-size: 0.8em;
+}
+
+footer a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
