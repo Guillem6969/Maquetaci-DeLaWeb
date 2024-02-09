@@ -10,6 +10,7 @@ body {
 }
 
 
+
 /*Estilo del header, usamos flex para distribuir los elementos*/
 header {
     width: 100%;
@@ -17,29 +18,36 @@ header {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(157, 157, 157));
-    column-gap: 20px;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     position: sticky;
     top: 0;
     z-index: 2;
 }
 
+header > h1 {
+    width: 10%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black, 0 0px 25px #74ebd5, 0 0 5px #9face6;
+}
+
+header > form {
+    width: 15%;
+}
 
 header > img {
     width: 100px;
     height: 100px;
 }
 
-
-header > h1 {
-    width: 20%;
-    color: mediumseagreen;
-    text-shadow: 2px 2px 2px black, 0 0 25px #74ebd5, 0 0 5px #9face6;
+input[type=text] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 
-header > form {
-    width: 20%;
+form > input {
+    width: 100%;
 }
 
 
@@ -50,24 +58,40 @@ header > nav {
     align-items: center;
 }
 
-
 nav > a {
     text-decoration: none;
     color: black;
-    font-size: 1.1em;
-    font-weight: 700;
+    background: rgb(148,236,201);
+    background: linear-gradient(45deg, rgba(148,236,201,0.8687850140056023) 7%, rgba(115,209,202,0.6194852941176471) 47%, rgba(34,155,201,0.8211659663865546) 77%, rgba(0,212,255,0.8127626050420168) 95%);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 0.6cm;
+    box-shadow: 0 0 4px 1px;
+    width: 10rem;
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;   
 }
-
 
 nav > a:hover {
-    text-decoration: underline;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    color: #182848;
+    transition: all 0.5s ease;
 }
 
 
-input[type=text] {
-    width: 100%;
-    border-radius: 5px;
-    padding: 10px;
+form > input {
+    padding-top: 10%;
+    padding-bottom: 10%;  
+    padding-left: 50%;
+    padding-right: 50%;
+    border-radius: 0.6cm;
+    box-shadow: 0px 0px 4px;  
 }
 
 
