@@ -8,10 +8,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-header img{
-    width: 5%;
-    height: 50%;
-}
+
 
 /*Estilo del header, usamos flex para distribuir los elementos*/
 header {
@@ -21,23 +18,28 @@ header {
     justify-content:space-between;
     align-items: center;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(157, 157, 157));
+    column-gap: 20px;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
+
+header > img {
+    width: 100px;
+    height: 100px;
+}
+
+
 header > h1 {
-    width: 10%;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 5px black, 0 0px 25px #74ebd5, 0 0 5px #9face6;
+    width: 20%;
+    color: mediumseagreen;
+    text-shadow: 2px 2px 2px black, 0 0 25px #74ebd5, 0 0 5px #9face6;
 }
 
 
 header > form {
-    width: 6%;
-}
-
-form > input {
-    width: 100%;
+    width: 20%;
 }
 
 
@@ -48,25 +50,24 @@ header > nav {
     align-items: center;
 }
 
+
 nav > a {
     text-decoration: none;
     color: black;
-    background-color: rgb(231, 231, 231);
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 0.6cm;
-    box-shadow: 0 0 4px 1px;
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
-form > input {
-    padding-top: 5%;
-    padding-bottom: 5%;  
-    padding-left: 50%;
-    padding-right: 50%;
-    border-radius: 0.6cm;
-    box-shadow: 0px 0px 4px;  
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+
+input[type=text] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 
@@ -74,17 +75,59 @@ main {
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
 
-article > img {
-    width: 33%;
-    /*height: 40vh;*/ 
+
+/*Para hacer el slider de las imagenes he seguido el siguiente tutorial: https://www.youtube.com/watch?v=McPdzhLRzCg*/
+.article-imagenes {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 38rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 7px 10px 15px gray;
+    border-radius: 15px;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
     object-fit: cover;
 }
 
-.article-imagenes {
+.slider-nav {
     display: flex;
-    justify-content: center;
-    height: 400px;
+    colum-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
+
+.slider-nav a {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: antiquewhite;
+    opacity: 0.8;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
 
 footer {
     display: grid;
@@ -108,11 +151,14 @@ footer a {
     color: white;
 }
 
+
 .article-texto h2 {
     padding-top: 50px;
     text-align: center;
     background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
     /*background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);*/
+    color: #182848;
+    box-shadow: -20px 2px 10px gray;
 }
 
 .article-texto  p {
@@ -120,6 +166,7 @@ footer a {
     line-height: 1.6;
     text-align:center;
     background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    color: #182848;
 }   
 
 .article-texto h3 {
@@ -130,10 +177,12 @@ footer a {
     justify-content: center;
     align-items: center;
     height: 100%;
+    color: #182848;
 }
 
 .texto {
     height: 50%;
+    color: #182848;
 }
 
 .div-container {
@@ -147,8 +196,8 @@ footer a {
 
 .redondita {
     background-color: lightblue;
-    height: 120px;
-    width: 120px;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -157,6 +206,7 @@ footer a {
     background: linear-gradient(45deg, rgba(148,236,201,0.8687850140056023) 7%, rgba(115,209,202,0.6194852941176471) 47%, rgba(34,155,201,0.8211659663865546) 77%, rgba(0,212,255,0.8127626050420168) 95%);
     border: 1px solid rgb(117, 179, 174);
     box-shadow: 5px 6px 5px gray;
+    color: #182848;
 }
 
 .redondita:hover {
@@ -187,6 +237,7 @@ footer a {
         display: none;
     }
 
+    /*
     .responsive-img {
         display: none;
     }
@@ -194,13 +245,7 @@ footer a {
     .article-imagenes img {
         width: 100%;
         object-fit: cover;
-    }
-
-    header > img {
-        width: 100px;
-        height: 100px;
-    }
-
+    }*/
 
 }
 
@@ -228,7 +273,7 @@ footer a {
         display: none;
     }
 
-
+/*
     .responsive-img {
         display: none;
     }
@@ -237,13 +282,8 @@ footer a {
     .article-imagenes img {
         width: 100%;
         object-fit: cover;
-    }
+    }*/
 
-
-    header > img {
-        width: 100px;
-        height: 100px;
-    }
 
     header {
         display: flex;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busy In Barcelona - Inicio</title>
-    <link rel="stylesheet" href="contenidos.css">
+    <link rel="stylesheet" href="inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <img src="logo.png" alt="Logo de Busy In Barcelona">
+        <img src="imgs/logo.png" alt="Logo de Busy In Barcelona">
 
         <h1>Busy In Barcelona</h1>
         
@@ -21,21 +21,30 @@
         </form>
 
         <nav>
-            <a href="#">Favoritas</a>
+            <a href="#">¿Quiénes somos?</a>
             <a href="#">Eventos</a>
+            <a href="#">Iniciar sesión</a>
             <a href="#">Ayuda</a>
-            <a href="#">Organizador</a>
         </nav>
 
     </header>
-    <nav>
-        <br>
-    </nav>
+
     <main>
         <article class="article-imagenes">
-            <img class="responsive-img" src="inicio3.jpg" alt="Imagen de la sagrada familia">
-            <img src="inicio1.jpg" alt="Imagen de la sagrada familia" id="img-central">
-            <img class="responsive-img" src="inicio2.jpg" alt="Imagen de la sagrada familia">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img src="imgs/inicio1.jpg" alt="Imagen de la sagrada familia" id="img1">
+                    <img src="imgs/inicio2.jpg" alt="Imagen de Barcelona" id="img2">
+                    <img src="imgs/inicio3.jpg" alt="Imagen de Barcelona" id="img3">
+                </div>
+
+                <div class="slider-nav">
+                    <a href="#img1"></a>
+                    <a href="#img2"></a>
+                    <a href="#img3"></a>
+                </div>
+            </div>
+            
         </article>
 
         <article class="article-texto">
